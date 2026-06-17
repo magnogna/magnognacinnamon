@@ -44,7 +44,7 @@ modules:
       #VM
         - spice-vdagent
 
-      remove:
+    remove:
       packages:
         - firefox
         - gnome-software
