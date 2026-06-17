@@ -24,16 +24,11 @@ modules:
         - kylegospo/webapp-manager
         
   - type: dnf
-    remove:
-      packages:
-        - firefox
-        - gnome-software
-        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
     install:
       packages:   
       #utils
         - webapp-manager
-        - gnome-classic
+        - gnome-classic-session
         - gnome-flashback
         - bazaar
         - lshw
@@ -48,6 +43,12 @@ modules:
         - fuse-libs
       #VM
         - spice-vdagent
+
+      remove:
+      packages:
+        - firefox
+        - gnome-software
+        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
   - type: default-flatpaks
     configurations:
