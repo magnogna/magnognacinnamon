@@ -67,9 +67,5 @@ modules:
     system:
       enabled:
       - cockpit.socket
-
-  - type: script
-    snippets:
-      - "ln -s /usr/lib/systemd/system/lightdm.service /etc/systemd/system/display-manager.service"
   
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
