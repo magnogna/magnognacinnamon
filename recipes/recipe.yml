@@ -34,7 +34,6 @@ modules:
         - gnome-shell-extension-appindicator
         - gnome-shell-extension-caffeine 
         - gnome-shell-extension-dash-to-panel 
-        - gnome-shell-extensions
         - gnome-tweaks
         - dconf-editor
         - gnome-calculator
