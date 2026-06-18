@@ -26,7 +26,10 @@ modules:
     install:
       packages:   
       #gnome
-        - gnome-shell-extension-just-perfection 
+        - gnome-shell-extension-just-perfection
+        - gnome-shell-extension-drive-menu
+        - gnome-shell-extension-apps-menu
+        - gnome-shell-extension-places-menu
         - yaru-theme
         - gnome-shell-extension-appindicator
         - gnome-shell-extension-caffeine 
@@ -46,6 +49,8 @@ modules:
         - fuse-libs
       #VM
         - spice-vdagent
+      #game
+        - steam
 
     remove:
       packages:
@@ -71,6 +76,7 @@ modules:
     install:
       - Transparent Top Bar (Adjustable transparency)
       - Gtk4 Desktop Icons NG (DING)
+      
   - type: systemd
     system:
       enabled:
